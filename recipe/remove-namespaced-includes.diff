@@ -1,0 +1,22 @@
+From 85251504f3704310c50b3c32f62a4ffeb23b5f6d Mon Sep 17 00:00:00 2001
+From: Tim Paine <3105306+timkpaine@users.noreply.github.com>
+Date: Tue, 7 Jan 2025 13:10:03 -0500
+Subject: [PATCH] remove namespaced includes
+
+---
+ activemq-cpp/activemq-cpp.pc.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/activemq-cpp/activemq-cpp.pc.in b/activemq-cpp/activemq-cpp.pc.in
+index c8fccaa8..0a68b8b2 100644
+--- a/activemq-cpp/activemq-cpp.pc.in
++++ b/activemq-cpp/activemq-cpp.pc.in
+@@ -25,5 +25,5 @@ Description: ActiveMQ C++ library.
+ Version: @VERSION@
+ Requires.private: @APR_PKGCONFIG@
+ Libs: -L${libdir} -l@ACTIVEMQ_LIBRARY_NAME@ -lpthread -ldl -luuid
+-Cflags: -I${includedir}/@ACTIVEMQ_LIBRARY_NAME@-@VERSION@
++Cflags: -I${includedir}
+ Libs.private = @AMQ_LIBS@
+--
+2.47.1
