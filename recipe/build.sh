@@ -10,5 +10,4 @@ export CXXFLAGS="$CXXFLAGS -std=c++11"
 make -j${CPU_COUNT}
 make install
 make check
-mv $PREFIX/include/activemq-cpp-*/activemq $PREFIX/include/
-rm -rf $PREFIX/include/activemq-cpp-*
+mv $PREFIX/include/activemq-cpp-* $PREFIX/include/activemq-cpp
