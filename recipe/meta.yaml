@@ -10,6 +10,7 @@ source:
   sha256: 3a56b526360155fd920f136b187ffb84942890b9b7e206976c81ef9f2ab2b11b
   patches:
     - testing.diff
+    - remove-namespaced-includes.diff
 
 build:
   number: 1
