@@ -16,7 +16,7 @@ index c8fccaa8..0a68b8b2 100644
  Requires.private: @APR_PKGCONFIG@
  Libs: -L${libdir} -l@ACTIVEMQ_LIBRARY_NAME@ -lpthread -ldl -luuid
 -Cflags: -I${includedir}/@ACTIVEMQ_LIBRARY_NAME@-@VERSION@
-+Cflags: -I${includedir}
++Cflags: -I${includedir}/@ACTIVEMQ_LIBRARY_NAME@
  Libs.private = @AMQ_LIBS@
 --
 2.47.1
