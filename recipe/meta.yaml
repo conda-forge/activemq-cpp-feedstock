@@ -39,6 +39,7 @@ test:
     - test -f $PREFIX/bin/activemqcpp-config
     - activemqcpp-config --help
     - test -f $PREFIX/include/activemq/core/ActiveMQSession.h
+    - test -f $PREFIX/include/cms/DeliveryMode.h
     - test -f $PREFIX/lib/libactivemq-cpp${SHLIB_EXT}
 
 about:
