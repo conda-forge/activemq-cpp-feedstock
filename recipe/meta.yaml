@@ -13,7 +13,7 @@ source:
     - remove-namespaced-includes.diff
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
   run_exports:
     # Not sure about ABI. Pin to x.x.x for now
@@ -38,7 +38,8 @@ test:
   commands:
     - test -f $PREFIX/bin/activemqcpp-config
     - activemqcpp-config --help
-    - test -f $PREFIX/include/activemq/core/ActiveMQSession.h
+    - test -f $PREFIX/include/activemq-cpp/activemq/core/ActiveMQSession.h
+    - test -f $PREFIX/include/activemq-cpp/cms/DeliveryMode.h
     - test -f $PREFIX/lib/libactivemq-cpp${SHLIB_EXT}
 
 about:
